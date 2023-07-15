@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        margin :0 auto;
+        text-align: center;
+        /* margin-top: 50px; */
+    }
+  
+    input{
+				border: 1px solid #999;
+				height: 40px;
+				background: #FFFFFF;
+				line-height: 20px;
+			}
+    button{
+        padding:10px;
+				text-align:center;
+				margin-top:5px;
+				
+				
+    }
+   
+       
+    
+</style>
+<script>
+    function calc(){
+        let l=document.getElementById("xianchang").value;
+        let h=document.getElementById("xianju").value;
+        let r=(h/2)+((l*l)/(8*h));
+        result=document.getElementById('result').value = r;
+        
+    }
+</script>
+<body>
+    <table>
+        <tr>
+            <td><img src="img/1.jpg" width="50" height="50" alt=""></td>
+            <td><h1>蓝天设计</h1></td>
+        </tr>
+        </table>
+    <div style="text-align: center; font-size: 18px; color: blue;" >弦长:&nbsp;&nbsp;(单位:厘米cm)</div>
+
+    <div style="height: 50px; text-align: center;">
+        <input style="text-align: center; " type="number" name="inpubox1" id="xianchang" placeholder="请输入弦长">
+    </div>
+
+    <div style="text-align: center; font-size: 18px;color: green;">弦距:&nbsp;&nbsp;(单位:厘米cm)</div>
+    
+    <div style="height: 50px; text-align: center;">
+        <input style="text-align: center;" type="number" name="inpubox2" id="xianju" placeholder="请输入弦距">
+    </div>
+
+    <div style="text-align: center;">
+         <button style="width: 100px;" onclick="calc()">计算</button>
+    </div>
+
+    <br>
+    <div style="text-align: center; font-size: 18px;color: red;">半径:&nbsp;&nbsp;(单位:厘米cm)</div>
+    
+    <div style="height: 50px; text-align: center;">
+        <input style="text-align: center;" type="number" name="inpubox2" id="result" placeholder="计算结果在这里显示" >
+    </div>
+
+    <div style=" text-align: center;" >
+    <img style="margin-left: -15px; "src="img/2.png" alt="请检查网络" width="105%" height="105%"></div>
+</body>
+</html>
